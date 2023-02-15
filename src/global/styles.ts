@@ -19,6 +19,8 @@ export default createGlobalStyle`
   }
 
   :root {
+    --padding-master: 41px 170px;
+
     // BACKGROUND
     --background-dark: #191919;
 
@@ -32,6 +34,7 @@ export default createGlobalStyle`
     --header-weight: 500;
 
     // COLOR
-    --light-content: #A7A7A7
+    --light-content: #A7A7A7;
+    --light-white: #D9D9D9;
   }
 `;

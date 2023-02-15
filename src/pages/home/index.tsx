@@ -1,8 +1,12 @@
 import { Container } from './styles';
 
+import Header from '../../components/Header/Header';
+
 function home() {
   return (
-    <Container>Hello World div</Container>
+    <Container>
+      <Header />
+    </Container>
   );
 }
 
