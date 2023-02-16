@@ -55,12 +55,16 @@ export const Container = styled.div`
     margin: 0 5px;
   }
 
+  .has-mobile {
+    display: none;
+  }
+
   @media (max-width: 830px) {
     .list-of-header, .social-media-svg {
       display: none;
     }
 
-    .mobile-menu {
+    .mobile-menu, .has-mobile {
       display: block;
     }
   }

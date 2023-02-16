@@ -24,8 +24,20 @@ function Header() {
         <img src={logo} alt="Logo dev"/>
       </div>
       <div className='right-header'>
-        {!mobileMenu && <RxHamburgerMenu size={40} onClick={() => setMobileMenu(true)} />}
-        {mobileMenu && <RiCloseFill size={40} onClick={() => setMobileMenu(false)} />}
+        {!mobileMenu && 
+          <RxHamburgerMenu 
+            className='has-mobile'
+            size={40} 
+            onClick={() => setMobileMenu(true)} 
+          />
+        }
+        {mobileMenu && 
+          <RiCloseFill 
+            className='has-mobile'
+            size={40} 
+            onClick={() => setMobileMenu(false)} 
+          />
+        }
         <div className='list-of-header'>
           {HeaderItems.map(item => {
             return (
