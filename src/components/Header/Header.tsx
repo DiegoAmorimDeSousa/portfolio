@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import { RxHamburgerMenu } from 'react-icons/rx';
+import { RiCloseFill } from 'react-icons/ri';
 
 import { Container } from './styles';
 
 import Anchor from '../Anchor/Anchor';
 
+import logo from '../../assets/logo.svg';
+
 function Header() {
+  const [mobileMenu, setMobileMenu] = useState(false);
 
   const HeaderItems = ["Home", "Sobre", "Projetos", "Contato"];
   const HeaderSocialMedias = [
@@ -15,19 +20,44 @@ function Header() {
 
   return (
     <Container>
-      <div>
-        {HeaderItems.map(item => {
-          return (
-            <Anchor item={item} />
-          )
-        })}
+      <div className='logo'>
+        <img src={logo} alt="Logo dev"/>
       </div>
-      <div>
-        {HeaderSocialMedias.map(socialMedia => {
-          return (
-            socialMedia
-          )
-        })}
+      <div className='right-header'>
+        {!mobileMenu && <RxHamburgerMenu size={40} onClick={() => setMobileMenu(true)} />}
+        {mobileMenu && <RiCloseFill size={40} onClick={() => setMobileMenu(false)} />}
+        <div className='list-of-header'>
+          {HeaderItems.map(item => {
+            return (
+              <Anchor item={item} />
+            )
+          })}
+        </div>
+        <div className='social-media-svg'>
+          {HeaderSocialMedias.map(socialMedia => {
+            return (
+              socialMedia
+            )
+          })}
+        </div>
+        {mobileMenu && (
+          <div className="mobile-menu">
+            <div className='list-of-header-mobile'>
+              {HeaderItems.map(item => {
+                return (
+                  <Anchor item={item} />
+                )
+              })}
+            </div>
+            <div className='social-media-svg-mobile'>
+              {HeaderSocialMedias.map(socialMedia => {
+                return (
+                  socialMedia
+                )
+              })}
+            </div>
+          </div>
+        )}
       </div>
     </Container>
   );

@@ -20,6 +20,8 @@ export default createGlobalStyle`
 
   :root {
     --padding-master: 41px 170px;
+    --padding-mobile-first-stage: 41px 100px;
+    --padding-mobile-second-stage: 41px 40px;
 
     // BACKGROUND
     --background-dark: #191919;
