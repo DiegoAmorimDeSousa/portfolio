@@ -28,15 +28,19 @@ export default createGlobalStyle`
 
     // FONT-FAMILY
     --dm-sans: 'DM Sans';
+    --poppins: 'Poppins';
 
     // FONT-SIZE
     --header-size: 20px;
+    --presentation-size: 58px;
 
     // FONT-WEIGHT
     --header-weight: 500;
+    --medium-weight: 700;
 
     // COLOR
     --light-content: #A7A7A7;
     --light-white: #D9D9D9;
+    --presentation-color: #D9D9D9
   }
 `;
