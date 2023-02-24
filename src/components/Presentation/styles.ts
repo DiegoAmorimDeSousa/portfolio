@@ -34,6 +34,19 @@ export const Container = styled.div`
 
     .me {
       margin-top: 80px;
+      width: 90%;
+    }
+
+    .me-profile-photo {
+      width: 60%;
+      height: 60%;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .me {
+      font-size: 40px;
+      line-height: 50px;
     }
   }
 `;
