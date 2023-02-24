@@ -32,6 +32,7 @@ export default createGlobalStyle`
 
     // FONT-SIZE
     --header-size: 20px;
+    --stack-size: 48px;
     --presentation-size: 58px;
 
     // FONT-WEIGHT
