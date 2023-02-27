@@ -1,12 +1,21 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  position: fixed;
   display: flex;
+  width: 80%;
   justify-content: space-between;
+  height: 85px;
+  top: 0;
+  padding-top: 20px;
 
   .logo {
     width: '97px';
     height: '59px';
+  }
+
+  .right-header {
+    margin-top: -15px;
   }
 
   .right-header, .list-of-header, .social-media-svg {

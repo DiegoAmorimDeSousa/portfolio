@@ -10,6 +10,7 @@ export default createGlobalStyle`
 
   html, body, #root {
     height: 100%;
+    scroll-behavior: smooth;
   }
 
   *, button, input, select {
@@ -33,6 +34,7 @@ export default createGlobalStyle`
     --poppins: 'Poppins';
 
     // FONT-SIZE
+    --smal-size: 12px;
     --header-size: 20px;
     --stack-size: 48px;
     --presentation-size: 58px;
@@ -44,6 +46,7 @@ export default createGlobalStyle`
     // COLOR
     --light-content: #A7A7A7;
     --light-white: #D9D9D9;
-    --presentation-color: #D9D9D9
+    --presentation-color: #D9D9D9;
+    --border-purple: #42446E;
   }
 `;

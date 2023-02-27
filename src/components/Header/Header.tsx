@@ -12,7 +12,12 @@ import logo from '../../assets/logo.svg';
 function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
 
-  const HeaderItems = ["Home", "Sobre", "Projetos", "Contato"];
+  const HeaderItems = [
+    {title: "Home", href: "#presentation"}, 
+    {title: "Stacks", href: "#stacks"}, 
+    {title: "Project", href: "#projects"},
+    {title: "Contact", href: "#contact"}
+  ];
   const HeaderSocialMedias = [
     <AiFillGithub size={30} style={{cursor: 'pointer'}} />,
     <AiFillLinkedin size={30} style={{cursor: 'pointer'}} />,
@@ -41,7 +46,7 @@ function Header() {
         <div className='list-of-header'>
           {HeaderItems.map(item => {
             return (
-              <Anchor item={item} />
+              <Anchor title={item.title} href={item.href} />
             )
           })}
         </div>
@@ -57,7 +62,7 @@ function Header() {
             <div className='list-of-header-mobile'>
               {HeaderItems.map(item => {
                 return (
-                  <Anchor item={item} />
+                  <Anchor title={item.title} href={item.href} />
                 )
               })}
             </div>

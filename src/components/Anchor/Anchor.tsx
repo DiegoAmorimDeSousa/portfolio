@@ -3,13 +3,14 @@ import React from 'react';
 import { Container } from './styles';
 
 interface Iitems {
-  item: string
+  title: string,
+  href: string,
 }
 
-function Anchor({ item }: Iitems) {
+function Anchor({ title, href }: Iitems) {
   return (
-    <Container>
-      {item}
+    <Container href={href}>
+      {title}
     </Container>
   );
 }
