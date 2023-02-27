@@ -30,7 +30,6 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     font-size: 12px;
-    color: yellow;
   }
 
   .status div svg {
@@ -41,6 +40,7 @@ export const Container = styled.div`
     padding: 0 30px;
     font-size: 14px;
     line-height: 26px;
+    min-height: 145px;
   }
 
   .stacks-project {

@@ -1,5 +1,6 @@
 import React from 'react';
 import { AiOutlineLink, AiFillGithub, AiFillWarning } from 'react-icons/ai';
+import { MdDone } from 'react-icons/md';
 
 import { Container } from './styles';
 
@@ -9,7 +10,7 @@ interface IProject {
   description: string,
   stacks: any[],
   link: string,
-  github: string[],
+  github: any[],
   status: string,
 }
 
@@ -19,13 +20,21 @@ const Project = ({img, title, description, stacks, link, github, status}: IProje
       <img src={img} alt="Project Image" />
       <div className="title-project">
         {title}
-        <div className="status">
-          {status === 'in development' ? (
-            <div>
-              <AiFillWarning />
-              {status}
-            </div>
-          ) : ''}  
+        <div 
+          className="status" 
+          style={
+            status === 'in development' ? 
+              {color: 'yellow'} : 
+            status === 'done' ? 
+              {color: 'green'} : 
+            {} 
+            }
+          >
+          <div>
+            {status === 'in development' && <AiFillWarning />}
+            {status === 'done' && <MdDone />}
+            {status}
+          </div> 
         </div>
       </div>
       <div className="description-project">{description}</div>
@@ -42,12 +51,12 @@ const Project = ({img, title, description, stacks, link, github, status}: IProje
           <a href={link} target="_blank" rel="noreferrer">Project</a>
         </div>
         <div className="github-link">
-          {github.map((repo, index) => {
+          {github.map((repo) => {
             return (
               <>
                 <AiFillGithub />
-                <a href={repo} target="_blank" rel="noreferrer" >
-                  {index === 0 ? 'API' : 'Front'}
+                <a href={repo.link} target="_blank" rel="noreferrer" >
+                  {repo.name}
                 </a>
               </>
             )

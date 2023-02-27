@@ -19,8 +19,12 @@ function Header() {
     {title: "Contact", href: "#contact"}
   ];
   const HeaderSocialMedias = [
-    <AiFillGithub size={30} style={{cursor: 'pointer'}} />,
-    <AiFillLinkedin size={30} style={{cursor: 'pointer'}} />,
+    <a href="https://github.com/DiegoAmorimDeSousa" target="_blank" rel="noreferrer">
+      <AiFillGithub size={30} style={{cursor: 'pointer'}} />
+    </a>,
+    <a href="https://www.linkedin.com/in/diego-amorim-de-sousa/" target="_blank" rel="noreferrer">
+      <AiFillLinkedin size={30} style={{cursor: 'pointer'}} />
+    </a>,
   ]
 
   return (

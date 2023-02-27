@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  position: fixed;
+  /* position: fixed; */
   display: flex;
-  width: 80%;
+  /* width: 80%; */
   justify-content: space-between;
-  height: 85px;
+  /* height: 85px;
   top: 0;
-  padding-top: 20px;
+  padding-top: 20px; */
 
   .logo {
     width: '97px';
@@ -23,11 +23,15 @@ export const Container = styled.div`
     align-items: center;
   }
 
+  .social-media-svg a {
+    color: var(--light-content);
+  }
+
   .social-media-svg > svg {
     margin-right: 20px;
   }
 
-  .social-media-svg > svg:hover {
+  .social-media-svg > a:hover {
     color: var(--light-white);
   }
 

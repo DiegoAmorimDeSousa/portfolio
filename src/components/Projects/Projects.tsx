@@ -5,6 +5,7 @@ import { Container } from './styles';
 import Project from '../Project/Project';
 
 import Futtylist from '../../assets/projects/futtylist.jpg';
+import Calculator from '../../assets/projects/calculadora.png';
 
 const Projects: React.FC = () => {
 
@@ -20,9 +21,29 @@ const Projects: React.FC = () => {
       ],
       link: '#',
       github: [
-        'https://github.com/DiegoAmorimDeSousa/futtylist-api',
+        {
+          name: 'API',
+          link: 'https://github.com/DiegoAmorimDeSousa/futtylist-api',
+        },
       ],
       status: 'in development'
+    },
+    {
+      img: Calculator,
+      title: 'Calculator',
+      description: 'This project was developed using the technology ReactJS and Styled-Components as library',
+      stacks: [
+        <img className='dev-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />,
+        <img className='dev-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+      ],
+      link: '#',
+      github: [
+        {
+          name: 'Front',
+          link: 'https://github.com/DiegoAmorimDeSousa/calculator/tree/main/src',
+        },
+      ],
+      status: 'done'
     }
   ];
 
