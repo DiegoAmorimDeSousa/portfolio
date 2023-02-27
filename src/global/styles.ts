@@ -25,6 +25,8 @@ export default createGlobalStyle`
 
     // BACKGROUND
     --background-dark: #191919;
+    --background-project: #363636;
+    --absolute-white: white;
 
     // FONT-FAMILY
     --dm-sans: 'DM Sans';
