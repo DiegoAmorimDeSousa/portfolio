@@ -12,6 +12,20 @@ const Projects: React.FC = () => {
 
   const projects = [
     {
+      img: Code7App,
+      title: 'Code7 APP',
+      description: 'With the Code7 app together with RD Station, you will be able to build and publish chatbots in just a few steps, without any programming.',
+      stacks: [
+        <img className='dev-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />,
+        <img className='dev-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />,
+        <img className='dev-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />,
+        <img className='dev-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" />
+      ],
+      link: 'https://partners.code7.com/',
+      github: [],
+      status: 'done'
+    },
+    {
       img: Futtylist,
       title: 'FuttyList',
       description: 'This project has the idea of ​facilitating the creation of a list of people who will participate in the scheduled game of the week and even to keep track of who the "monthly" players are.',
@@ -46,20 +60,6 @@ const Projects: React.FC = () => {
       ],
       status: 'done'
     },
-    {
-      img: Code7App,
-      title: 'Code7 APP',
-      description: 'With the Code7 app together with RD Station, you will be able to build and publish chatbots in just a few steps, without any programming.',
-      stacks: [
-        <img className='dev-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />,
-        <img className='dev-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />,
-        <img className='dev-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />,
-        <img className='dev-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" />
-      ],
-      link: 'https://partners.code7.com/',
-      github: [],
-      status: 'done'
-    }
   ];
 
   return (
