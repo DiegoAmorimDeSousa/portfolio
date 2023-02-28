@@ -28,7 +28,7 @@ export const Container = styled.div`
     background: linear-gradient(45deg,blue,purple) border-box;
   }
 
-  @media (max-width: 770px) {
+  @media (max-width: 905px) {
     flex-direction: column-reverse;
     align-items: center;
 
@@ -38,8 +38,8 @@ export const Container = styled.div`
     }
 
     .me-profile-photo {
-      width: 60%;
-      height: 60%;
+      width: 310px;
+      height: 310px;
     }
   }
 

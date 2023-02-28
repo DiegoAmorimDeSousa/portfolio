@@ -11,11 +11,13 @@ function home() {
   return (
     <Container>
       <Header />
-      <Presentation />
-      <Stacks />
-      <Projects />
-      <Contact />
-      <Footer />
+      <div className="body">
+        <Presentation />
+        <Stacks />
+        <Projects />
+        <Contact />
+        <Footer />
+      </div>
     </Container>
   );
 }

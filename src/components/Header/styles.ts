@@ -1,13 +1,12 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  /* position: fixed; */
+  position: fixed;
   display: flex;
-  /* width: 80%; */
+  width: 100%;
+  padding: 20px 171px;
   justify-content: space-between;
-  /* height: 85px;
   top: 0;
-  padding-top: 20px; */
 
   .logo {
     width: '97px';
@@ -25,6 +24,7 @@ export const Container = styled.div`
 
   .social-media-svg a {
     color: var(--light-content);
+    margin: 0 5px;
   }
 
   .social-media-svg > svg {
@@ -70,6 +70,10 @@ export const Container = styled.div`
 
   .has-mobile {
     display: none;
+  }
+
+  @media (max-width: 1000px) {
+    padding: 20px 100px;
   }
 
   @media (max-width: 830px) {

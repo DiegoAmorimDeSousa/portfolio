@@ -13,7 +13,7 @@ const Projects: React.FC = () => {
     {
       img: Futtylist,
       title: 'FuttyList',
-      description: 'This project has the idea of ​​facilitating the creation of a list of people who will participate in the scheduled game of the week and even to keep track of who the "monthly" players are.',
+      description: 'This project has the idea of ​facilitating the creation of a list of people who will participate in the scheduled game of the week and even to keep track of who the "monthly" players are.',
       stacks: [
         <img className='dev-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />,
         <img className='dev-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />,
@@ -36,11 +36,11 @@ const Projects: React.FC = () => {
         <img className='dev-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />,
         <img className='dev-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
       ],
-      link: '#',
+      link: 'https://diegoamorimdesousa.github.io/calculator/',
       github: [
         {
           name: 'Front',
-          link: 'https://github.com/DiegoAmorimDeSousa/calculator/tree/main/src',
+          link: 'https://github.com/DiegoAmorimDeSousa/calculator',
         },
       ],
       status: 'done'
