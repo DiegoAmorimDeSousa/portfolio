@@ -50,18 +50,20 @@ const Project = ({img, title, description, stacks, link, github, status}: IProje
           <AiOutlineLink />
           <a href={link} target="_blank" rel="noreferrer">Project</a>
         </div>
-        <div className="github-link">
-          {github.map((repo) => {
-            return (
-              <>
-                <AiFillGithub />
-                <a href={repo.link} target="_blank" rel="noreferrer" >
-                  {repo.name}
-                </a>
-              </>
-            )
-          })}
-        </div>
+        {github.length > 0 && (
+          <div className="github-link">
+            {github.map((repo) => {
+              return (
+                <>
+                  <AiFillGithub />
+                  <a href={repo.link} target="_blank" rel="noreferrer" >
+                    {repo.name}
+                  </a>
+                </>
+              )
+            })}
+          </div>
+        )}
       </div>
     </Container>
   );

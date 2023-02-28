@@ -6,6 +6,7 @@ import Project from '../Project/Project';
 
 import Futtylist from '../../assets/projects/futtylist.jpg';
 import Calculator from '../../assets/projects/calculadora.png';
+import Code7App from '../../assets/projects/code7app.jpg';
 
 const Projects: React.FC = () => {
 
@@ -43,6 +44,20 @@ const Projects: React.FC = () => {
           link: 'https://github.com/DiegoAmorimDeSousa/calculator',
         },
       ],
+      status: 'done'
+    },
+    {
+      img: Code7App,
+      title: 'Code7 APP',
+      description: 'With the Code7 app together with RD Station, you will be able to build and publish chatbots in just a few steps, without any programming.',
+      stacks: [
+        <img className='dev-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />,
+        <img className='dev-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />,
+        <img className='dev-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />,
+        <img className='dev-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" />
+      ],
+      link: 'https://partners.code7.com/',
+      github: [],
       status: 'done'
     }
   ];
