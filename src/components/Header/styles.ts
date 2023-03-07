@@ -7,6 +7,7 @@ export const Container = styled.div`
   padding: 20px 171px;
   justify-content: space-between;
   top: 0;
+  z-index: 10;
 
   .logo {
     width: '97px';

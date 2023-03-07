@@ -4,6 +4,7 @@ import Header from '../../components/Header/Header';
 import Presentation from '../../components/Presentation/Presentation';
 import Stacks from '../../components/Stacks/Stacks';
 import Projects from '../../components/Projects/Projects';
+import CarouselProjects from '../../components/CarouselProjects/CarouselProjects';
 import Contact from '../../components/Contact/Contact';
 import Footer from '../../components/Footer/Footer';
 
@@ -15,6 +16,7 @@ function home() {
         <Presentation />
         <Stacks />
         <Projects />
+        <CarouselProjects />
         <Contact />
         <Footer />
       </div>
