@@ -40,6 +40,10 @@ const Projects: React.FC = () => {
           name: 'API',
           link: 'https://github.com/DiegoAmorimDeSousa/futtylist-api',
         },
+        {
+          name: 'Front',
+          link: 'https://futtylist.vercel.app/'
+        }
       ],
       status: 'in development'
     },
