@@ -7,6 +7,7 @@ import Project from '../Project/Project';
 import Calculator from '../../assets/projects/calculadora.png';
 import Code7App from '../../assets/projects/code7app.jpg';
 import Discord from '../../assets/projects/discord.png';
+import Encurtador from '../../assets/projects/encurtador.png';
 
 const Projects: React.FC = () => {
 
@@ -59,6 +60,21 @@ const Projects: React.FC = () => {
       ],
       status: 'done'
     },
+    {
+      img: Encurtador,
+      title: 'Url shortener',
+      description: 'Project with the purpose of practicing and using the best library available to be able to shorten urls.',
+      stacks: [
+        <img className='dev-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />,
+      ],
+      // github: [
+      //   {
+      //     name: 'Api',
+      //     link: 'https://github.com/DiegoAmorimDeSousa/bot-discord-boteria',
+      //   },
+      // ],
+      status: 'in development'
+    },
   ];
 
   return (
@@ -73,7 +89,7 @@ const Projects: React.FC = () => {
               description={project.description}
               stacks={project.stacks}
               link={project?.link || ''}
-              github={project.github}
+              github={project?.github || []}
               status={project.status}
             />
           );
