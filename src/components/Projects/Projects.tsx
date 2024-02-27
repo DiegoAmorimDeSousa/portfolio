@@ -4,9 +4,9 @@ import { Container } from './styles';
 
 import Project from '../Project/Project';
 
-import Futtylist from '../../assets/projects/futtylist.jpg';
 import Calculator from '../../assets/projects/calculadora.png';
 import Code7App from '../../assets/projects/code7app.jpg';
+import Discord from '../../assets/projects/discord.png';
 
 const Projects: React.FC = () => {
 
@@ -26,31 +26,9 @@ const Projects: React.FC = () => {
       status: 'done'
     },
     {
-      img: Futtylist,
-      title: 'FuttyList',
-      description: 'This project has the idea of ​facilitating the creation of a list of people who will participate in the scheduled game of the week and even to keep track of who the "monthly" players are.',
-      stacks: [
-        <img className='dev-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />,
-        <img className='dev-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />,
-        <img className='dev-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
-      ],
-      link: '#',
-      github: [
-        {
-          name: 'API',
-          link: 'https://github.com/DiegoAmorimDeSousa/futtylist-api',
-        },
-        {
-          name: 'Front',
-          link: 'https://futtylist.vercel.app/'
-        }
-      ],
-      status: 'in development'
-    },
-    {
       img: Calculator,
       title: 'Calculator',
-      description: 'This project was developed using the technology ReactJS and Styled-Components as library',
+      description: 'This project was developed using the technology ReactJS and Styled-Components as library.',
       stacks: [
         <img className='dev-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />,
         <img className='dev-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
@@ -60,6 +38,23 @@ const Projects: React.FC = () => {
         {
           name: 'Front',
           link: 'https://github.com/DiegoAmorimDeSousa/calculator',
+        },
+      ],
+      status: 'done'
+    },
+    {
+      img: Discord,
+      title: 'Bot Discord',
+      description: 'Bot developed for a discord server using the discord.js lib and a message exchange provider.',
+      stacks: [
+        <img className='dev-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />,
+        <img className='dev-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />,
+        <img className='dev-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/discordjs/discordjs-original.svg" />
+      ],
+      github: [
+        {
+          name: 'Api',
+          link: 'https://github.com/DiegoAmorimDeSousa/bot-discord-boteria',
         },
       ],
       status: 'done'
@@ -77,7 +72,7 @@ const Projects: React.FC = () => {
               title={project.title}
               description={project.description}
               stacks={project.stacks}
-              link={project.link}
+              link={project?.link || ''}
               github={project.github}
               status={project.status}
             />

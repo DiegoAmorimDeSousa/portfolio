@@ -46,10 +46,10 @@ const Project = ({img, title, description, stacks, link, github, status}: IProje
         })}
       </div>
       <div className="links">
-        <div className="project-link">
+        {link.length > 0 && <div className="project-link">
           <AiOutlineLink />
           <a href={link} target="_blank" rel="noreferrer">Project</a>
-        </div>
+        </div>}
         {github.length > 0 && (
           <div className="github-link">
             {github.map((repo) => {

@@ -7,6 +7,7 @@ import { Container } from './styles';
 
 import CalculatorGif from '../../assets/projects/using-calculator.gif';
 import PartnersGif from '../../assets/projects/partners.gif';
+import DiscordGif from '../../assets/projects/discord-bot.gif';
 
 const CarouselProjects: React.FC = () => {
 
@@ -27,6 +28,10 @@ const CarouselProjects: React.FC = () => {
     {
       component: PartnersGif,
       alt: 'Partners'
+    },
+    {
+      component: DiscordGif,
+      alt: 'Discord'
     }
   ]
 
