@@ -65,14 +65,15 @@ const Projects: React.FC = () => {
       title: 'Url shortener',
       description: 'Project with the purpose of practicing and using the best library available to be able to shorten urls.',
       stacks: [
-        <img className='dev-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />,
+        <img className='dev-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg" />
+        ,
       ],
-      // github: [
-      //   {
-      //     name: 'Api',
-      //     link: 'https://github.com/DiegoAmorimDeSousa/bot-discord-boteria',
-      //   },
-      // ],
+      github: [
+        {
+          name: 'Front',
+          link: 'https://github.com/DiegoAmorimDeSousa/url-shortener',
+        },
+      ],
       status: 'in development'
     },
   ];
