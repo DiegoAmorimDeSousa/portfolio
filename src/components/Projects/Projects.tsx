@@ -17,10 +17,10 @@ const Projects: React.FC = () => {
       title: 'Code7 APP',
       description: 'With the Code7 app together with RD Station, you will be able to build and publish chatbots in just a few steps, without any programming.',
       stacks: [
-        <img className='dev-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />,
-        <img className='dev-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />,
-        <img className='dev-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />,
-        <img className='dev-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" />
+        <img className='dev-icon' alt="react" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />,
+        <img className='dev-icon' alt="node" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />,
+        <img className='dev-icon' alt="mongo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />,
+        <img className='dev-icon' alt="redux" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" />
       ],
       link: 'https://partners.code7.com/',
       github: [],
@@ -31,8 +31,8 @@ const Projects: React.FC = () => {
       title: 'Calculator',
       description: 'This project was developed using the technology ReactJS and Styled-Components as library.',
       stacks: [
-        <img className='dev-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />,
-        <img className='dev-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+        <img className='dev-icon' alt="react" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />,
+        <img className='dev-icon' alt="node" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
       ],
       link: 'https://diegoamorimdesousa.github.io/calculator/',
       github: [
@@ -48,9 +48,9 @@ const Projects: React.FC = () => {
       title: 'Bot Discord',
       description: 'Bot developed for a discord server using the discord.js lib and a message exchange provider.',
       stacks: [
-        <img className='dev-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />,
-        <img className='dev-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />,
-        <img className='dev-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/discordjs/discordjs-original.svg" />
+        <img className='dev-icon' alt="react" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />,
+        <img className='dev-icon' alt="node" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />,
+        <img className='dev-icon' alt="discord" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/discordjs/discordjs-original.svg" />
       ],
       github: [
         {
@@ -65,7 +65,7 @@ const Projects: React.FC = () => {
       title: 'Url shortener',
       description: 'Project with the purpose of practicing and using the best library available to be able to shorten urls.',
       stacks: [
-        <img className='dev-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg" />
+        <img className='dev-icon' alt="angular" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg" />
         ,
       ],
       github: [
@@ -74,7 +74,8 @@ const Projects: React.FC = () => {
           link: 'https://github.com/DiegoAmorimDeSousa/url-shortener',
         },
       ],
-      status: 'in development'
+      link: 'https://url-short-steel.vercel.app/',
+      status: 'done'
     },
   ];
 
